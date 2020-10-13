@@ -26,3 +26,19 @@ test('responds to requests', (t) => {
     })();
   });
 });
+
+// Here are the function might help u:  
+// app.delete('/notes/:id', (request, response) => {
+//     const id = Number(request.params.id)
+//     notes = notes.filter(note => note.id !== id)
+  
+//     response.status(204).end()
+//   })
+
+//   const generateId = () => {
+//     const maxId = notes.length > 0
+//       ? Math.max(...notes.map(n => n.id))
+//       : 0
+
+//       return maxId + 1
+//  }
